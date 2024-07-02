@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color: antiquewhite; ">
+    <div
+        style="background-image: url(https://media.istockphoto.com/id/1223803728/photo/asian-cuisine-served-on-a-table.jpg?s=612x612&w=0&k=20&c=q-dwj6Rh77YNlRa_wbMTMtQ3g4ETVnx33L__xoN74Q8=); height: 1000px; width: 100%; background-size: cover;">
+
+
+
+        <div style="background-color: rgb(0,0,0,0.4); position: fixed; width: 100vw; ">
+            <div style="display: flex; color: white; gap: 5%; padding: 50px;">
+
+                <h5> HOME</h5>
+                <H5> MENU</H5>
+                <H5> OUR STORY</H5>
+                <H5> CONTACT US</H5>
+                <IMG src="data:image/png;base64,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"
+                    height="40PX" width="40PX">
+                <IMG src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADgCAMAAADCMfHtAAAAhFBMVEUAAAD////39/eKiopjY2PQ0NDn5+fT09PLy8u7u7toaGhZWVmkpKTx8fH09PTf39+bm5t+fn6qqqrc3NyysrLExMTt7e3AwMCPj4+urq5xcXG5ubkzMzOVlZVeXl4rKytLS0t4eHgjIyNCQkIyMjILCwsVFRVPT09EREQdHR0RERE7Ozsv3ZhKAAANcklEQVR4nOVd6WKyOhDtJwqCqCjiWhe6fPa27/9+V6u1Fs4kk2RYeu/5WSHNgZDMciZ5eHDE69PHYdBd5xNvm8TT2SbMsn4vSNPx2D9hfsZwOByNRp0STn88/TQ8X3K+djxO0zQIev1sEc5WcbKc5NHg+cm1g5Z4y5NNzx/+qQfzcS+MveixJnKDbTaviVmZapbsqmX3lgRNkfuGv+pWRG8w6zRN7ob+RJzex6o99C7IRMfrZNw0H4ThVopf0rbX942pCL+mWajhzNFrmoEengu/Y2MrnwnmB2uCYdN952Jmx2/Q3gmmhNGbBcFp0702g/nK0coVUIWeGb+PpvtrgaGJo7Vrurd2OLIJ5k131RYRk+Ck6Y7aI/9vv8Ez1gyCkXmzQ3+c9vpZOFtN42S79LzJJM/X6yiKurvdbnCH3RndE6J7rE/I88nE85bnYM9qE2b9IB37Q4sVWT9QD+y2xovYiw5VR4peHwfr5TTz2d06aBr8y2oliKN/KmZWwn49TVmd0zxzvantx/xJWRy7lb6DQ2ULC83dnWldIT0SHysdxb7i7lzz+niTceXINSYl7TGqP0K/4lClCQZqjuRAU33JnZa8vy+sVSuJT9yksmU2tXafBdX3mOBbFHe0aIB+46h4jXDJ2Bi/9MZBf1bIW3wkr85q7zkbdCRpUL64R11rGeapBzF/3JH2aKsJKiiWTHAqbdbiIXrBjPkSn4nr0kZ6bQTq8yrM/xm+qtNMp81AJNuDHxe9E8/h0EiXDfFCdH5/fxHxvcZNdRriYzD4gD8Q6aPV/TXYOpjX0nEW3pOrre3HwFwhVv67K4j4aIOubgE/VvbstfjzHvc/Ihr4bqlODip0iz0rRdTwknFHAD+CpuRIRYDPbFm8BjO4/Vx6Rp8Ia6VBI0edK6pNsCt1G6b4He8fWgHCIyjMqjg8cfNqYfzKMFtVGYhI6bhwWR9d9BV2e4JNcLMcFYMMwRf6h7+061QCoxdtsddIIV1QuBAu6dfPFa4VbXGaKII/1vMzYIji+iHCkQ585CawphkWFIpwmF5dKM4TagoKRVZRm0DTGKBfVJHxOkH5t3/Kei/4xX4antAyLxkNDUHBcFW4FL5uj2zkUDsXDIWqp+jaQffhc8KEb7eCzr5Fk2USn5AsJ9GBeZNCOViSCaOLPtcUFASQjQEflyHIpIwXW/2ErRD2lLxhZJoNKepyjtOzWvyexgf1/WTFw6h0KYw1PRA2G5HZMMXbaqSid0FnpnqV5HJRjrDAUMyeWCxEpPBbtjp1mJTc9huoe8pX5uiyAWE1uFs0ezrRA5E9Ew0Rcw3QIsKwfU604OobPkJnRo2A0IjCpmCkGl24JAa6G793neCBQB8/WGA3Y70FajMm/H8ngg7q/qKdckFpNiYWMzTvzrDv5OIcHp0q2jrQ8d5yngNW/S7wKuIQClYYkjzApfj9rtnshfrfKEfTx38uBkHYeBQoSezgQHQ07adpb6aShKDPP8BmaTFCwIWQMtW2ngmNnzEevJbeofMIdfz/yBHxcQxjYfUPBKsv7Sx/NIkPySnWHHwJKAMdm5TCFjWEo3AWBWGvDBvbCBYiyCVqBxsC5q7Fq3wJkTlFaIBihuaTmfQbPMPYOIZTOWZoXNJXSRVfh3apnBmauoc8Afapz34aBKnPfeGmppUBQ07Vwh04rmAQr+8+rH2UcPwrQ8sjhwz/QX81yztpLRkiTnGItYPbbFLHDGGS30hOqqtz6yu2QDjoPEmjZw3DFbh/RkEM9VcV6pZuTSWnyWyDGUJB28GgWWWxcJ9jmijNWRNhHWYIwzdUVAhAVao4Yo6FD5XBZ7BywXzxwxH91cCcUNgyBtatKvDxzm4FphBxuJRvTSi+IqNJ4o1+UnxXCjOEo4xdtkXIrU4YmdpcdI0Ie97DDOFf/3LbJJdtCwePFJqzTRv4tjBD7hRNisOtAj2EipdvRMIvjph/mKC8esvkHDUi1PV2VTKkXmE58cUEZcEzXyJcF5wYUs/cXtRI2EfML1GcIVaLlYQuJqAKd3iGsjhDYi2kYu4sELk03poIvxrClmMBd4Y7LRAgJi/W7P4mzJBQDTqKw4k6VlbkCHoRDgzx8uWsccAmKmv9kWYIe8I3h0hgC5VjBEJf154hHqQCok082XCGqTBDHH7iuzo0YMMcT1iYIcwUiiiN8JfIuBEWQFkzxMu9iO72FTbNsCOgL2fNEIYQHdfCL0A/ilFlJssQho9ENmoknh4jOgzH1UNuyRC6AVKlYKhthj5EliG6TUyVCiMaesNNlCE0rsTE4dCm189iMENhyxC600KaTSK0qw+cwsdOZaR0gLeJFRLBSVE/mcJlxpYhXJXlChZR64xqQUmGcLFwZ/YFlHZjFNNJMkRZMaH1/gzkBzMsU0mGKAglKPBHviejeUmGlg+ZC5SyYwTcqmZoq/cDQJ854yOAXAiVjQ7/T4YtHaWWDCueaSybl2SIVgvrdEUZyHOxXS0sGcor/H8AhUhsV3xLhtBqk9ujALVua7VZMoSLjKFYjAYMmjHCGJIMofcktmEPfH6MJKIkQ+iKiS2I0K5nxPEkGVYbxYCKPstOWTOEkSihbQpgNIJTqSTKEA4koa0moCKds9eKKMPc9jkzAENtnCCQKEM4klxS+N/A+69xvgBRhjgzI7JtD1Zjcu6UZVjd1kuwYdZKxGfI0QXgDKnA9ll4/z/WRh2yDIkst/tLxO2ysueQITSQWM1hpYLzl4hHP08KKMyQUJs4TqeE8p+nhRZmSIgmHNdEQvLNu5nPkKcRJrYEtSvPVLfJ1AdAhrk9Q2obfof96aFT9oddHiHNkBT14n1UGcCGEl9yDBnCVB0ziURtr2xU6HIPqtadm7YTZ0iKzy1zNFRhCTtMCRnCOZ+7bJNFXVabMpD1COzMK2QItfpsw4SU1w/NFXxkaRBf+F8BQ8WpJoYnEr7QRTP8liBDOD/z654UBUtGxcSK/RENjHnIEKq/DaZ7xVYfBuITVaElvxXM0LU6T3nGF3Ptj1TF/AZhZqw2ca6wVNaAjhnf0IdyPw0TFRJW7rlXyar3w+hptG7P6ppuIzseK2jdK52pwpIvjBXh+Imukv9g0hNcjSBQra4/TxAf9p6Tq+kNZpuM4poZiR0HyJNQ7jAPl93bMrvfLUPOZi+GjhiuP4QMTf0f/cv4wmg45G8SYioMwDWkIvtisDfGMIKxcUvondFfzY8rF91g6AJzWUDOZ2ixi7A4xZG5k0mon5A9YSOFFT7m2sbFJOL3yLC0EvsKbvVlqc1BWbkOHl52CXnlDhlmsIsrI0dnjkeXZRkozGzawLJug9iRDg0u2/McqWCgIWxVKyghkGIJmX2BlsDC6FvLxZGX2cd/dkivOI9UB1EOCv0tyA0jrfHk9Bp962jyA55SZuR2ig7I7fffMzem7kEsfNZpbgUsdxJ2quR/IM0zh4J8BTT7WyFsnCtsUas5McMbBjsRErOxKlC6CF38HRG+EdFRrtl2XCqyyz0cjeewIfq7UBXa+5Zhj/uJUL0U/PrPQx/53IJnrk0y1XDte+w9qbSAYeXzD2j9clkQy3jKp0FpJh8Fqwm5M7cVkA/xue5Bl0D0X1+wH+TeNonjZOvlO4s9dLVAPD6lVGh/4T+HCnpQMWB+4dOHgBEq203DGwS0iD95wJNy23KilQFgeuCiX4JzXcPdtQBicaUBybfkZDk+YMD7GpGEK6WrFVw7oOLv+rHBhEZbTnhkAw7SrepHowxb88AJsC8PAlrIrTnvmAcsXvr6FcdWJDZEqg14I9VM/fOvmmtwNPrbKcNplQY7bApC1Ph9AY6rtOU4WQZwivaugoHYDrgl51brQYh67iMH2BUXLD+vFsT+/PeXEJv/u4UvawOhlPgZqMDX/I5xSgnPfgYM8fnyLseT1QciDlSIxFBC0V/gJ1LhvGJElNI/tn7JoHRxpeFHqtPEStCrAalMLQe1ySy80FaB1YBUYwGpA95x8owWexl03gA5f3RKTDY+LIcn+iQenMVWSOpa6Q4r1O9EXZNKSSGYyJCCShBJhXuVkh+HirQqoDxkilZUKZOavkixvQwitVCQNjaVpQUnji15j57mrC9VvhVmae7QmVaRNDLCQCufU2un9ee9+boT7SvE+4RxHrZO1shSwvaSrm0RpTUGywXvlEVtz9gSinE23U6iwVu1PuTLMfLiMOXL3/UVTboCEYzR3E+DXpaFs9X0nObdLj3Pm/yAd8Fyu02SJD5hOl2dMJvNNptNGIaLRZZl/X6vF6Tp2PfnQytpFcc2oU5C+RXgyWR+MUWuDmgvf/RtPeBXM71WcjZs5TDaEl5UeF8POoaTuoW4sFmYh6/1NXetgk046bWScq1q0LE8lYE4QKt9sK2eeDApLGwQc6djNY7CBVsVwDl9pHGnm4ZIwDpq75QjdqLGs2BZmhx8EXX4DdrK+boxE6gnKODVI8+zrRudTWVxv+60+bk1SOTf3k8cl2FTNP3FUupIKS2edt40S+tysjp+b7Zdu5S1OeDvx7G7npxF+NPVbBaGi2us5YT0huCK3g39C7ILFotFeMJmMzthtZpO4zhOku3Sm6y7R8cI7b8RwMc1XZlQOwAAAABJRU5ErkJggg=="
+                    height="40PX" width="40PX">
+                <IMG src="data:image/png;base64,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"
+                    height="40PX" width="40PX">
+
+            </div>
+        </div>
+
+        <div class=" container">
+            <div style="display: flex; justify-content: center; ">
+                <img src="https://i.ibb.co/WK9hkx8/Garcia-Tavern-logos-transparent.png" height=" 300px" width="300px"
+                    style=" margin-top: 15%;">
+
+            </div>
+
+            <div class="container">
+                <h1 style="color: white; margin-left: 25%;"><b>Stunning food, Amazing Quaility</b></h1>
+                <h3 style="color: white; margin-left: 30%; margin-top: 4%;"> Let us host your next special occassion
+                </h3>
+            </div>
+
+            <div style="display: flex;  margin-left: 35%; gap: 5px; " class="container">
+                <img src="https://i.pinimg.com/originals/c2/06/28/c20628e0966e5daaa6a8aaa3fd4a12a3.png" height="40px"
+                    width="40px" style="margin-top: 4%; border-radius: 19px;">
+                <H3 style="color: black;  margin-top: 4%;"><B><I> Contect Us</I></B></H3>
+            </div>
+
+        </div>
+
+        <div
+            style="background-color: rgba(236, 222, 198, 0.3); width: 70%; height: 900px; margin-top: 10%;  margin-left: 10%; box-shadow: 5px 10px 18px #888888; ">
+            <div style="display: flex; gap: 30px;">
+                <div style="margin-left: 5%;display: flex;     flex-direction: column;  padding: 2%;">
+                    <img src="https://i.ibb.co/QCxY7FT/michael-discenza-Mxfcoxyc-H-Y-unsplash.jpg"
+                        style="height: 400px ; width: 500px ; border-radius: 30px; ">
+                    <img src="https://i.ibb.co/cNrYC6S/izabela-rutkowski-Nme6-Tb-Wu-Vp-A-unsplash.jpg"
+                        style="height: 400px ; width: 500px ; border-radius: 30px; margin-top: 20px;">
+                </div>
+
+
+                <div>
+                    <div style="color: white; margin-top: 25px; text-align: center; ">
+                        <div>
+                            <h4> DRINK MENU</h4>
+                        </div>
+
+                        <div>
+                            <h4>Sprits, wine, and beer</h4>
+                        </div>
+                    </div>
+
+                    <div
+                        style="background-color: white; height: 720px; width: 600px; margin-top: 30px; border-radius: 10px;">
+                        <div style="padding: 7%;  " class="container">
+
+                            <div style="display: flex;">
+                                <h4 style="color: grey;">Vodka 1oz</h4>
+                                <h5 style="color: grey; margin-left: 63%;">$6</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>VODKA and choice of
+                                        juice or soda.</i></h6>
+                            </div>
+
+                            <hr />
+
+                            <div style="display: flex;">
+                                <h4 style="color: grey;">Rum 1oz.</h4>
+                                <h5 style="color: grey; margin-left: 65%;">$6</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>RUM and choice of juice or
+                                        soda.</i></h6>
+                            </div>
+                            <hr />
+
+                            <div style="display: flex;">
+                                <h4 style="color: grey;">Whisky 1oz.</h4>
+                                <h5 style="color: grey; margin-left: 59%;">$6</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>Whisky and choice of juice
+                                        or soda</i></h6>
+                            </div>
+                            <hr />
+
+                            <div style="display: flex;">
+                                <h4 style="color: grey;">Tequila 1oz.</h4>
+                                <h5 style="color: grey; margin-left: 59%;">$6</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>Tequila served with juice
+                                        or soda.</i></h6>
+                            </div>
+                            <hr />
+
+                            <div style="display: flex;">
+                                <h4 style="color: grey;">Red wine.</h4>
+                                <h5 style="color: grey; margin-left: 63%;">$6</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>8oz Red wine, ask server
+                                        for our wine selection.</i></h6>
+                            </div>
+                            <hr />
+
+                            <div style="display: flex;">
+                                <h4 style="color: grey;">White wine.</h4>
+                                <h5 style="color: grey; margin-left: 59%;">$6</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>8oz white wine, ask server
+                                        for our wine selection.</i></h6>
+                            </div>
+                            <hr />
+
+                            <div style="display: flex;">
+                                <h4 style="color: grey;">Sparkling wine.</h4>
+                                <h5 style="color: grey; margin-left: 53%;">$6</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>8oz sparking wine glass of
+                                        your choice.</i></h6>
+                            </div>
+                            <hr />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div
+            style="background-color: rgba(236, 222, 198, 0.3); width: 70%; height: 900px; margin-top: 10%;  margin-left: 10%; box-shadow: 5px 10px 18px #888888; ">
+            <div style="display: flex; gap: 30px;">
+
+                <div style="margin-left: 5%;display: flex;     flex-direction: column;  padding: 2%;">
+
+                    <img src="https://i.ibb.co/9g9yg5G/chad-montano-l-P5-MCM6n-Z5-A-unsplash.jpg"
+                        style="height: 500px ; width: 500px ; border-radius: 30px; ">
+                    <img src="https://i.ibb.co/q1HKkyL/ella-olsson-4d-Qia-WKi-L-Y-unsplash.jpg"
+                        style="height: 300px ; width: 500px ; border-radius: 30px; margin-top: 20px;">
+                </div>
+
+
+                <div>
+                    <div style="color: white; margin-top: 25px;  text-align: center;">
+                        <div>
+                            <h4>FOOD MENU </h4>
+                        </div>
+
+                        <div>
+                            <h4>Entrees, mains, and handhelds</h4>
+                        </div>
+                    </div>
+
+                    <div
+                        style="background-color: white; height: 650px; width: 600px; margin-top: 30px; border-radius: 10px;">
+                        <div style="padding: 7%;  " class="container">
+
+                            <div style="display: flex; justify-content: space-around;">
+                                <h4 style="color: grey;">Nachos</h4>
+                                <h5 style="color: grey; margin-left: 65%;">$12</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>cheese, onions, tomotoes.
+                                    </i></h6>
+                            </div>
+
+                            <hr />
+
+                            <div style="display: flex; justify-content: space-around;">
+                                <h4 style="color: grey;">Tacos.</h4>
+                                <h5 style="color: grey; margin-left: 65%; ">$12</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>chicken or beef with your
+                                        choice of side.
+                                    </i></h6>
+                            </div>
+                            <hr />
+
+                            <div style="display: flex; justify-content: space-around;">
+                                <h4 style="color: grey;">Chicken rice bowl.</h4>
+                                <h5 style="color: grey; margin-left: 45%;">$12</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>brown rice, and veggies,
+                                        served with choice or sauce
+                                    </i></h6>
+                            </div>
+                            <hr />
+
+                            <div style="display: flex; justify-content: space-around;">
+                                <h4 style="color: grey;">Grilled chicken.</h4>
+                                <h5 style="color: grey; margin-left: 50%;">$12</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>
+                                        Juicy grilled chicken served with choice of sauce.</i></h6>
+                            </div>
+                            <hr />
+
+                            <div style="display: flex; justify-content: space-around;">
+                                <h4 style="color: grey;">Steak and fired beans.</h4>
+                                <h5 style="color: grey; margin-left: 40%;">$12</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>Steak and your choice of
+                                        side.
+                                    </i></h6>
+                            </div>
+                            <hr />
+
+                            <div style="display: flex; justify-content: space-around;">
+                                <h4 style="color: grey;">burrito.</h4>
+                                <h5 style="color: grey; margin-left: 70%;">$12</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>Your choice of beef or
+                                        chicken.
+                                    </i></h6>
+                            </div>
+                            <hr />
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div
+            style="background-color: rgba(236, 222, 198, 0.3); width: 70%; height: 970px; margin-top: 10%;  margin-left: 10%; box-shadow: 5px 10px 18px #888888  ">
+            <div style="display: flex; gap: 30px;">
+                <div style="margin-left: 5%;display: flex;     flex-direction: column;  padding: 2%;">
+                    <img src="https://i.ibb.co/GJ0Q03Q/camille-paralisan-rq-NIBr-DGnh4-unsplash.jpg"
+                        style="height: 600px ; width: 500px ; border-radius: 30px; ">
+                    <img src="https://i.ibb.co/rsxRJMX/oscar-nord-5-CPn8-NE2-Tc-unsplash.jpg"
+                        style="height: 300px ; width: 500px ; border-radius: 30px; margin-top: 20px;">
+                </div>
+
+
+                <div>
+                    <div style="color: white; margin-top: 25px; text-align: center; ">
+                        <div>
+                            <h4> <b>DESERT MENU</b></h4>
+                        </div>
+
+                        <div>
+                            <h4>Deserts and sweets</h4>
+                        </div>
+                    </div>
+
+                    <div
+                        style="background-color: white; height: 810px; width: 600px; margin-top: 30px; border-radius: 10px;">
+                        <div style="padding: 7%;  " class="container">
+
+                            <div style="display: flex;">
+                                <h4 style="color: grey;">Chocolate cake .</h4>
+                                <h5 style="color: grey; margin-left: 55%;">$7</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>Loaded Chocolate cake with
+                                        fudge topping.
+                                        .</i></h6>
+                            </div>
+
+                            <hr />
+
+                            <div style="display: flex;">
+                                <h4 style="color: grey;">NY cheesecake.</h4>
+                                <h5 style="color: grey; margin-left: 56%;">$7</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>NY cheesecake toped with
+                                        strawberry topping.
+                                    </i></h6>
+                            </div>
+                            <hr />
+
+                            <div style="display: flex;">
+                                <h4 style="color: grey;">Apple pie.</h4>
+                                <h5 style="color: grey; margin-left: 67%;">$7</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>Warm apple pie tooped with
+                                        icecream.
+                                    </i></h6>
+                            </div>
+                            <hr />
+
+                            <div style="display: flex;">
+                                <h4 style="color: grey;">Churros.</h4>
+                                <h5 style="color: grey; margin-left: 70%;">$7</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>pancake mix, water, oil,
+                                        sugar, cinnamon.
+                                        .</i></h6>
+                            </div>
+                            <hr />
+
+                            <div style="display: flex;">
+                                <h4 style="color: grey;">Sopaipillas</h4>
+                                <h5 style="color: grey; margin-left: 65%;">$7</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>Light, crispy pastry puffs,
+                                        sopaipillas are a sweet way to round out a spicy meal.
+                                    </i></h6>
+                            </div>
+                            <hr />
+
+                            <div style="display: flex;">
+                                <h4 style="color: grey;">Creamy Caramel Flan.</h4>
+                                <h5 style="color: grey; margin-left: 43%;">$7</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>A small slice of this
+                                        impressively rich, creamy, caramel flan dessert goes a long way.
+                                    </i></h6>
+                            </div>
+                            <hr />
+
+                            <div style="display: flex;">
+                                <h4 style="color: grey;">Shortcut Tres Leches Cake</h4>
+                                <h5 style="color: grey; margin-left: 35%;">$7</h5>
+                            </div>
+                            <div>
+                                <h6 style="color: rgb(211, 208, 208); margin-left: 20px;"><i>My mom's favorite cake is
+                                        tres leches, a butter cake soaked in three kinds of milk.
+                                    </i></h6>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
